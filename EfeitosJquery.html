@@ -1,0 +1,86 @@
+<html>
+<head>
+	<meta charset="utf-8">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<link rel="stylesheet" type="text/css" href="css.css">
+<script>
+	//*HIDE E SHOW
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $("#paragrafo").hide();
+    });
+    $("#show").click(function(){
+        $("#paragrafo").show();
+    });
+});
+
+	//*FADE IN E FADE OUT
+	$(document).ready(function(){
+    $("#fade").click(function(){
+        $("#div1").fadeToggle();
+        $("#div2").fadeToggle("slow");
+        $("#div3").fadeToggle(3000);
+    });
+});
+	//SLIDE DOWN E SLIDE UP
+	$(document).ready(function(){
+    $("#flip").click(function(){
+        $("#panel").slideToggle("slow");
+    });
+});
+	//ANIMATE
+	$(document).ready(function(){
+    $("#animacao").click(function(){
+        $("#animar").animate({left: '900px'});
+    });
+});
+	//STOP()
+	$(document).ready(function(){
+    $("#stopbtn").click(function(){
+        $("#panelstop").slideDown(3000);
+    });
+    $("#stop").click(function(){
+        $("#panelstop").stop();
+    });
+});
+</script>
+</head>
+<body>
+	<div id="cabecalho"><p id="titulo">Efeitos</p></div><hr>
+
+<div id="caixa">
+
+<center><p id="paragrafo">Funçao hide() e show()</p></center>
+<center><button id="hide">hide()</button></center>
+<center><button id="show">show()</button></center>
+</div>
+<div id="caixa">
+	<p ><center>Demonstrar fadein() e fadeout() fadeToggle() com parametros diferentes</center></p>
+
+<center><button id="fade">Clique aqui</button></center><br><br>
+
+<div id="div1" style="width:80px;height:80px;display:none;background-color:pink;"></div><br>
+<div id="div2" style="width:80px;height:80px;display:none;background-color:yellow;"></div><br>
+<div id="div3" style="width:80px;height:80px;display:none;background-color:blue;"></div>
+	
+</div>
+<div id="caixa">
+	<center><div id="flip">Clique para descer/subir</div></center>
+	<div id="panel">oi</div>
+</div>
+<div id="caixa">
+	  <center><button id="animacao">Ativar animação</button></center>
+
+  	  
+  	  <img id="animar" style="height: 100px;width: 100px;position: absolute;" src="https://78.media.tumblr.com/7d65a925636d6e3df94e2ebe30667c29/tumblr_nq1zg0MEn51qg6rkio1_500.jpg">
+</div>
+<div id="caixa">
+	<center>
+	<button id="stop">stop()</button>
+</center>
+
+<div id="stopbtn">Clique para descer</div>
+<div id="panelstop">oi</div>
+</div>
+</body>
+</html>

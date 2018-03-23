@@ -1,0 +1,65 @@
+body{
+  color: white;
+  background-color: #E9E9E9;
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+#cabecalho{
+  width: 100%;
+  height: 100px;
+  position: static;
+  background-color: #323232;
+}
+hr{
+  margin-top:  0px;
+  width: 100%;
+  height: 10px;
+  background-color: #32D79B;
+}
+#titulo{
+  padding: 20px;
+  color: #E9E9E9;
+  font-size: 50px;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 5px;
+}
+#caixa{
+  padding: 10px 10px 10px 10px;
+  width: 800px;
+  height: 400px;
+  background-color: #323232 ;
+  margin: 10px 50px 0px 200px;
+  border-radius: 5px;
+ 
+
+}
+button{
+     border: none;;
+     width: 100px;
+    text-transform: uppercase;
+    height: 50px;
+     border-radius: 5px;
+     background-color:  #32D79B;
+}
+
+#panel, #flip {
+      padding: 5px;
+      text-align: center;
+      background-color: #32D79B;
+      
+  }
+
+#panel {
+      padding: 50px;
+      display: none;
+  }
+#panelstop{
+  padding: 60px;
+      display: none;
+  }
+#stopbtn, #panelstop{
+  padding: 5px;
+      text-align: center;
+      background-color: #32D79B;
+}
